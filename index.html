@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- Page Title -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <!-- Description -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <!-- Form container -->
+    <div id="form-container">
+      <!-- Form -->
+      <form id="survey-form" action="/index.html">
+
+        <!-- Name field -->
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" autocomplete="off" placeholder="Enter your name" required>
+
+        <!-- Email field -->
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" autocomplete="off" placeholder="Enter your Email" required>
+
+        <!-- Number field -->
+        <label id="number-label" for="number">Number</label>
+        <input id="number" type="number" min="5" max="11" autocomplete="off" placeholder="Enter your mobile number">
+
+
+        <!-- Dropdown menu -->
+        <label id="dropdown-menu-label" for="dropdown">
+          Which option best describes your current role?
+        </label>
+
+        <select name="role" id="dropdown">
+          <option value="" disabled selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full-time Job</option>
+        </select>
+
+
+        <!-- Radio button menu -->
+        <p class="option-text">Would you recommend freeCodeCamp to a friend?</p>
+
+        <div class="option">
+          <input type="radio" id="definitely" name="recommendation" value="definitely">
+          <label for="definitely">Definitely</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" id="maybe" name="recommendation" value="maybe">
+          <label for="maybe">Maybe</label>
+        </div>
+        
+
+
+        <!-- Checkbox menu -->
+        <p class="option-text">What would you like to see improved?</p>
+
+        <div class="option">
+          <input type="checkbox" id="option1" value="front-end">
+          <label for="option1">Front-end Projects</label>
+        </div>
+        
+        <div class="option">
+          <input type="checkbox" id="option2" value="back-end">
+          <label for="option2">Back-end Projects</label>
+        </div>
+
+        <div class="option">
+          <input type="checkbox" id="option3" value="challenges">
+          <label for="option3">Challenges</label>
+        </div>
+
+
+        <!-- Textarea -->
+        <label style="margin-top: 20px;" for="comment">Any comments or suggestions?</label>
+        <textarea name="review" id="comment" autocomplete="off" cols="30" rows="4" placeholder="Enter your comment here..."></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" name="Submit" id="submit">
+      </form>
+    </div>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
